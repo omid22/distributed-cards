@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "georgia";
+  font-family: "georgia", serif;
   line-height: 1.5;
   background-color: #f5f2f0;
 }
@@ -11,14 +11,38 @@ html {
 
 img {
   width: 100%;
+  margin: 0 0 1.5rem;
 }
 
-main {
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: "Denk One";
+  color: #623b0c;
+}
+
+ol {
+  list-style-type: none;
+  display: flex;
+  font-size: 1.125rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "banner banner"
-    "col1   col2";
-  gap: 1rem;
-  margin: 1.5rem;
+}
+
+li {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ede3db;
+  border-color: #623b0c;
+}
+
+a {
+  font-size: 1.125rem;
+  background-color: #623b0c;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
 }
